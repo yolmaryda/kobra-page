@@ -1,0 +1,771 @@
+/* * {
+    outline: 2px solid blue !important;
+
+} */
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* backgroung cover */
+
+.hero {
+    background-image: url(../images/snake-skin-cobra.jpg);
+    height: 100%;
+}
+
+.hero-background {
+    background: linear-gradient(181deg, rgba(0, 0, 0, 1), #000000ca);
+    height: 100%;
+}
+
+/* navigator menu */
+
+.nav-bar {
+    height: 120px;
+}
+
+.menu__logo {
+    margin: 0 0 0 40px;
+    width: 20%;
+    display: inline-block;
+
+}
+
+.menu__logo img {
+    margin: 20px 0 0 0;
+    padding: 0;
+    height: 80px;
+}
+
+.menu__list {
+    margin: 50px 40px 0 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+
+}
+
+.menu__list li {
+    display: inline-block;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.menu__list li a:not(.item--active) {
+    display: block;
+    text-decoration: none;
+    font: normal normal 500 16px Noto Sans;
+    padding: 0 15px 10px 0;
+    color: #fff
+}
+
+.menu__list li a:hover:not(.item--active) {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    font: normal normal 500 16px Noto Sans;
+}
+
+.item--active {
+    text-decoration: none;
+    font: normal normal 500 16px Noto Sans;
+    color: #D50000;
+    padding: 0 15px 10px 0;
+    border-bottom: 2px solid #D50000;
+}
+
+/* ---------------------home content */
+.home-main {
+    margin: 0 180px 0;
+}
+
+.home-main p {
+    margin: 0 0 5px 5px;
+    padding-top: 80px;
+    text-align: left;
+    font: normal normal bold 20px Noto Sans;
+    letter-spacing: 2.5px;
+    color: #777777;
+}
+
+.home-main h1 {
+    margin: 0 0 30px;
+    padding-bottom: 30px;
+    text-align: left;
+    line-height: 65px;
+    font: normal normal bold 60px Noto Sans;
+    color: #fff;
+}
+
+/* ---------- buttons */
+
+.home-buttons {
+    margin: 0 100px 0 180px;
+    padding: 40px 0 0;
+    overflow: hidden;
+}
+
+.button-h {
+    display: inline-block;
+    padding-right: 30px;
+    font: normal normal 500 16px Noto Sans;
+    letter-spacing: 0.72px;
+}
+
+.button-h a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 50px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.button-h a:hover {
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    font-weight: 600;
+    padding: 15px 50px;
+}
+/* ---------- scroll */
+
+.scroll-h {
+    float: right;
+    height: 150px;
+}
+
+.scroll-anchor {
+    padding-top: 35px;
+}
+
+.scroll-anchor a {
+    padding-right: 20px;
+    color: #fff;
+    text-decoration: none;
+    font: normal normal bold 13px Noto Sans;
+    letter-spacing: 0.15px;
+}
+
+.scroll__arrow {
+    color: #D50000;
+    padding: 0 10px 10px 0;
+}
+
+.line-vert-a {
+    display: inline-block;
+    vertical-align: text-top;
+    width: 2px;
+    height: 120px;
+    background-color: #D50000;
+}
+
+/* ---------------------about section */
+.about-section {
+    background-color: #D50000;
+}
+
+.line-vert-b {
+    margin-right: 100px;
+    float: right;
+    width: 2px;
+    height: 120px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.about__content p {
+    margin: 0;
+    text-align: center;
+    display: block;
+    padding-top: 150px;
+    font: normal normal bold 20px Noto Sans;
+    letter-spacing: 2.5px;
+    color: #111111;
+}
+
+.about__sub {
+    text-align: center;
+    margin: 0px;
+    padding:0 50px;
+}
+
+.about__sub h2 {
+    margin: 0;
+    padding-right: 10px;
+    display: inline-block;
+    text-align: center;
+    font: normal normal bold 80px Noto Sans;
+    color: #fff;
+}
+
+.about__sub img {
+    display: inline-block;
+    vertical-align: top;
+    height: 100px;
+}
+
+.line-hor {
+    margin: auto;
+    padding-top: 30px;
+    width: 650px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.about__descript p {
+    margin: 0 200px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    font: normal normal normal 20px Noto Sans;
+    letter-spacing: 0.53px;
+    color: #111111;
+}
+
+.about-stats {
+    margin: 0 180px;
+    padding-bottom: 100px;
+    text-align: center
+}
+
+.stats-block {
+    display: inline-block;
+    padding-right: 65px;
+    padding-left: 35px;
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+    text-align: center;
+}
+
+.stats__count {
+    text-align: center;
+    font: normal normal bold 85px Noto Sans;
+    color: #FFFFFF;
+}
+
+.about-stats h5 {
+    margin: 0;
+    text-align: center;
+    font: normal 600 20px Noto Sans;
+    letter-spacing: 0.7px;
+    color: #111111;
+}
+
+.stats-mblock {
+    display: inline-block;
+    padding-right: 65px;
+    padding-left: 65px;
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+    text-align: center;
+}
+
+.stats-rblock {
+    display: inline-block;
+    padding-right: 35px;
+    padding-left: 65px;
+    text-align: center;
+}
+
+/* ---------------------services section */
+.services-sect {
+    background-color: #FBFBFB;
+    padding-bottom: 40px;
+}
+
+.services__content {
+    text-align: center;
+    padding-top: 50px;
+}
+.services__content p {
+    margin: 0px;
+    text-align: center;
+    display: inline-block;
+    padding-top: 80px;
+    font: normal normal bold 20px Noto Sans;
+    letter-spacing: 2.5px;
+    color: #D50000;
+}
+
+.services__descript {
+    margin: 0 200px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    font: normal normal bold 50px Noto Sans;
+    color: #111111;
+}
+
+.line-hor {
+    margin: auto;
+    padding-top: 20px;
+    width: 650px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+/* --------- services__col */
+.services__col {
+    margin: 80px 60px 0;
+    display: inline-block;
+}
+
+.box__1-6 {
+    margin: 0 0 60px;
+    padding-left: 60px;
+    width: 41%;
+    display: inline-block;
+}
+
+.box-style h3 {
+    margin: 0 0 10px;
+    display: inline-block;
+    text-align: left;
+    font: normal normal bold 35px Noto Sans;
+    letter-spacing: 0.6px;
+    color: #333333;
+}
+
+.box-style p {
+    margin: 0;
+    padding-left: 75px;
+    text-align: left;
+    font: normal normal normal 16px Noto Sans;
+    letter-spacing: 0.8px;
+    line-height: 30px;
+    color: #777777;
+}
+
+.box__2-6 {
+    margin: 0 0 60px;
+    padding-right: 60px;
+    width: 41%;
+    float: right;
+}
+
+.box-service {
+    display: inline-block
+}
+
+.icon-serv {
+    display: inline-block;
+    padding: 0;
+    color: #D50000;
+    font-size: 300%;
+    height: 70px;
+    width: 70px;
+    vertical-align: middle;
+}
+
+/* --------------------- Works section */
+.works-sect {
+    background-color: #111111;
+    padding: 50px 0 40px 0;
+}
+
+.works__content {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.works__content p {
+    margin: 0px;
+    text-align: center;
+    display: inline-block;
+    padding-top: 80px;
+    font: normal normal bold 20px Noto Sans;
+    letter-spacing: 2.5px;
+    color: #D50000;
+}
+
+.works__descript {
+    margin: 0 200px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    font: normal normal bold 50px Noto Sans;
+    color: #fff;
+}
+
+.line-hor-white {
+    margin: auto;
+    padding-top: 20px;
+    width: 650px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.287);
+}
+
+
+/* ---------------------clients section */
+.clients-sect {
+    background-color: #DDDDDD;
+    padding: 50px 0 0 0;
+}
+
+.clients__content {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.clients__content p {
+    margin: 0px;
+    text-align: center;
+    display: inline-block;
+    padding-top: 80px;
+    font: normal normal bold 20px Noto Sans;
+    letter-spacing: 2.5px;
+    color: #D50000;
+}
+
+.clients__descript {
+    margin: 0 200px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    font: normal normal bold 50px Noto Sans;
+    color: #111111;
+}
+
+/* --------- clients__testimonials */
+.testimonials {
+    margin: 20px 40px 0;
+    text-align: center;
+}
+
+.client__testimonials p {
+    margin: 0 auto 60px;
+    width: 60%;
+    text-align: center;
+    font: normal normal normal 25px Noto Sans;
+    letter-spacing: 0.6px;
+    line-height: 60px;
+    color: #777777;
+}
+
+.testimonials__avatar {
+    padding-bottom: 60px;
+}
+
+.testimonials__avatar img {
+    display: inline-block;
+    margin: 0 0 15px;
+    border-radius: 50%;
+    width: 84px;
+    height: 84px;
+}
+
+.avatar-name {
+    font: normal normal bold 18px Noto Sans;
+    letter-spacing: 0.7px;
+    color: #111111;
+}
+
+.avatar-company {
+    margin: 5px 0 0;
+    font: normal normal medium 16px Noto Sans;
+    letter-spacing: 0.3px;
+    color: #777777;
+
+}
+
+.line-vert-center {
+    margin: 0 auto;
+    width: 2px;
+    height: 120px;
+    background-color: #D50000;
+}
+
+
+/* ---------------------contact section */
+.contact-sect {
+    margin: 0;
+    background: url(../images/workspace_kobra.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+}
+
+.overlay {
+    padding-bottom: 60px;
+    background: linear-gradient(181deg, rgba(0, 0, 0, 0.945), #000000e7);
+    height: 100%;
+}
+
+.contact__content p {
+    margin: 0px;
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+    font: normal normal bold 20px Noto Sans;
+    letter-spacing: 2.5px;
+    color: #D50000;
+}
+
+.contact__descript {
+    margin: 0 200px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    font: normal normal bold 50px Noto Sans;
+    color: #fff;
+}
+
+/* --------- Contact form */
+.contact-box {
+    margin: 30px 200px 0;
+    display: flex;
+}
+
+.contact-primary {
+    vertical-align: top;
+    display: inline-block;
+    padding-bottom: 40px;
+    background-color: #0000008c;
+    width: 70%;
+}
+
+.contact-primary h3 {
+    margin-top: 60px;
+    padding: 0 20px 30px;
+    color: #FFFFFF;
+    font: normal normal bold 16px Noto Sans;
+}
+
+.contact-secundary {
+    vertical-align: top;
+    display: inline-block;
+    padding-bottom: 40px;
+    background-color: #000000;
+    width: 30%;
+}
+
+.contact-secundary h3 {
+    margin-top: 60px;
+    padding: 0 20px 30px;
+    color: #FFFFFF;
+    font: normal normal bold 16px Noto Sans;
+}
+
+.c-info h5 {
+    margin: 0;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    font: normal normal 600 16px Noto Sans;
+    color: #D50000;
+}
+
+.c-info p {
+    margin: 0;
+    padding-left: 20px;
+    padding-bottom: 45px;
+    text-align: left;
+    font: normal normal 300 15px Noto Sans;
+    color: #777777;
+    line-height: 35px;
+}
+.list-social {
+    padding-left: 10px;
+    float: left;
+}
+
+.list-social li {
+    display: inline-block;
+    color: #fff;
+    list-style: none;
+}
+
+.list-social a {
+    padding: 10px;
+    color: #fff;
+    font-size: 21px;
+}
+
+.list-social a:hover {
+    color: #D50000;
+}
+
+.contact-box .no-space {
+    margin-right: -4px;
+}
+
+/* --------- Contact form */
+
+.contact__form {
+    margin: 0;
+    padding: 0 20px 30px;
+}
+
+.input-contact {
+    margin: 0 0 30px;
+    border-width: 0px 0px 2px;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    background-color: transparent;
+    text-align: left;
+    font: normal normal normal 16 Noto Sans;
+    color: #DDDDDD;
+
+}
+
+.input-contact:focus {
+    border-bottom-color: #D50000;
+}
+
+.message {
+    height: auto;
+}
+
+.submit-contact {
+    margin-top: 70px;
+    text-align: center;
+    font: normal normal bold 14px Noto Sans;
+    letter-spacing: 0.72px;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    background-color: #D50000;
+    width: 100%;
+    height: 50px;
+}
+
+.submit-contact:hover {
+    background-color: #f30d0dd2;
+}
+
+
+/* ----------------------------- footer */
+.footer-box {
+    background-color: #000000;
+    padding: 90px 0 60px;
+}
+
+.footer-main {
+    margin: 0 200px;
+}
+
+.logo-footer {
+    display: inline-block;
+    margin: 0;
+
+}
+
+.logo-footer img {
+    float: left;
+    padding-bottom: 18px;
+    width: 50%;
+
+}
+
+.footer-descript {
+    display: inline-block;
+    padding: 0 30px 0 20px;
+    width: 45%;
+}
+
+.footer-descript p {
+    margin: 0;
+    text-align: left;
+    padding-left: 20px;
+    font: normal normal normal 15px Noto Sans;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #777777;
+}
+
+.footer-subscribe {
+    float: right;
+    padding: 0 0 0 20px;
+    width: 45%;
+}
+
+.footer-subscribe h5 {
+    margin: 0;
+    padding: 30px 0 30px;
+    text-align: left;
+    font: normal normal 600 18px Noto Sans;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #F6F6F6;
+}
+
+.footer-subscribe p {
+    margin: 0;
+    padding-bottom: 40px;
+    float: right;
+    text-align: left;
+    font: normal normal normal 15px Noto Sans;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #777777;
+}
+
+/* --------- Subscribe form */
+.email {
+    margin: 0;
+    padding: 0 10px 0 40px ;
+    border: none;
+    width: 60%;
+    height: 55px;
+    outline: none;
+    background-color: #1D1D1D;
+    font: normal normal normal 16px Noto Sans;
+    color: #d1cbcb;
+
+}
+/* QUITANDO EL ESPACIO ENTRE ELEMENTOS EN LINEA CON ELEMENTO PADRE E HIJOS  */
+.input-icon .no-space {
+    margin-right: -4px;
+}
+/* ELEMENTO PADRE DIV ELEMENTOS HIJOS INPUTS EN ESTE CASO ^ */
+
+.input-icon {
+    position: relative;
+    width: 100%;
+}
+
+.input-icon i {
+    color: #DDDDDD;
+    font-size: 20px;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 18px;
+    left: 0px;
+    top:initial
+}
+
+.submit {
+    margin: 0;
+    padding: 0 15px;
+    border: none;
+    height: 53px;
+    width: 25%;
+    outline: none;
+    background-color: #D50000;
+    font: normal normal bold 14px Noto Sans;
+    color: #FFFFFF;
+}
+
+.submit:hover {
+    background-color: #f30d0dd2;
+}
+
+/* --------- BOTTOM FOOTER */
+.footer-bottom {
+    margin-top: 100px;
+    text-align: center;
+    font: normal normal normal 16px Noto Sans;
+}
+
+.bottom-copyright {
+    display: inline-block;
+    color: #777777;
+}
+
+.footer-a {
+    padding-left: 5px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #DDDDDD;
+}
+
+.footer-a:hover {
+    font-weight: 400;
+    text-decoration: none;
+    color: #D50000;
+}
+
