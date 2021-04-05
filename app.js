@@ -1,9 +1,9 @@
-// function myFunction() {
-//     var x = document.getElementById("myNavigation");
-//     if (x.className === "navigation") {
-//       x.className += " responsive";
-//     } else {
-//       x.className = "navigation";
-//     }
-// }
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+}
 

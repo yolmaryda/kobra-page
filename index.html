@@ -6,75 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KOBRA Creatives</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-
     <link rel="preload" href="./css/normalize.css" as="style">
     <link rel="stylesheet" href="./css/normalize.css">
 
     <link rel="preload"href="./css/style.css" as="style">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_nex.css">
+
+    <link rel="preload" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/5ee06d73e8.js" crossorigin="anonymous"></script>
-    <script src="./app.js" defer></script>
+    <script src="./app.js"></script>
 </head>
 <body>
-    <div id="home">
-        <div class="container-hero">
-            <header class="navigation" id="myNavigation">
-                <div class="nav-bar l-r-min">
-                    <div class="header-nav">
-                        <figure class="nav-bar__logo">
-                            <a href="#contact"><img src="./images/KOBRA_logo-hor-white.png" alt=""></a>
-                        </figure>
-                        <div class="container-btn">
-                            <a href="javascript:void(0);" class="menu-btn" onclick="myFunction()">
-                                <i class="fas fa-bars nav-icon"></i>
-                              </a>
+
+    <div class="bg-image">
+        <header>
+
+            <div class="navbar"> <!-- top navbar -->
+                <figure class="navbar-logo">
+                    <a href="index.html"><img src="./images/KOBRA_logo-hor-white.png" alt="logo Kobra Creatives" class="navbar-logo__img"></a>
+                </figure>
+                <nav id="navbar" class="topnav"><!-- inicio navigation bar-->
+                    <div id="myLinks">
+                        <ul class="menu-list">
+                            <li><a class="menu-list__item no-style" href="./index.html">Home</a></li>
+                            <li><a class="menu-list__item no-style" href="#about">About</a></li>
+                            <li><a class="menu-list__item no-style" href="#services">Services</a></li>
+                            <li><a class="menu-list__item no-style" href="#projects">Projects</a></li>
+                            <li><a class="menu-list__item no-style" href="#contact">Contact</a></li>
+                        </ul>
+                        <div class="nav-social">
+                            <ul class="social-list no-style">
+                                <li><a class="no-style light" href="https://github.com/yolmaryda" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                                <li><a id="profile-link" class="no-style light" href="https://www.freecodecamp.org/yolmaryda" target="_blank"><i class="fab fa-free-code-camp" aria-hidden="true"></i></a></li>
+                                <li><a class="no-style light" href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                <li><a class="no-style light" href="https://www.behance.net/yolmaryda4b4b" target="_blank"><i class="fab fa-behance" aria-hidden="true"></i></a></li>
+                            </ul>
                         </div>
                     </div>
-                    <nav class="nav-links">
-                        <ul class="nav-bar__list">
-                            <li><a class="nav-bar__item menu--active" href="#home">Home</a></li>
-                            <li><a class="nav-bar__item" href="#about">About</a></li>
-                            <li><a class="nav-bar__item" href="#services">Services</a></li>
-                            <li><a class="nav-bar__item" href="#works">Works</a></li>
-                            <li><a class="nav-bar__item" href="#clients">Clients</a></li>
-                            <li><a class="nav-bar__item" href="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            <section class="home-main">
-                <div class="home-social">
-                    <ul class="home-s-item">
-                        <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fab fa-behance" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-                <h3>Welcome to Kobra</h3>
-                <h1>
+                </nav><!-- end navigation bar-->
+
+                <a href="#" class="menu-icon" onclick="myFunction()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div> <!-- end navbar -->
+            <section class="home-main" id="welcome-section">
+                <p class="grey mayor-text">Welcome to Kobra</p>
+                <h1 class="light">
                     We are a creative group
                     of people who design
                     influential brands and
                     digital experiences.
                 </h1>
-                <div class="home-action">
+                <div class="main-button">
                     <div class="btn-border">
-                        <a href="#contact">Start project</a>
-                        <a href="#about">More about us</a>
+                        <a class="no-style mayor-text light" href="#contact">Start project</a>
+                        <a class="no-style mayor-text light" href="#about">More about us</a>
                     </div>
                 </div>
-                    <div class="scroll-down">
-                        <i class="fas fa-chevron-down"></i>
-                        <a href="#about">Scroll down</a>
-                        <div class="line-vert-alt bg-red"></div>
-                    </div>
+                <div class="scroll-box">
+                    <a href="#about" class="scroll-text mayor-text light no-style"><i class="fas fa-chevron-down"></i>Scroll down</a>
+                    <div class="line-vertical"></div>
                 </div>
             </section>
-        </div>
+        </header>
     </div>
     <main>
         <section class="about-main" id="about">
@@ -160,29 +156,67 @@
             </div>
         </section>
 
-        <section class="works-main" id="works">
+        <section class="projects-main" id="projects">
             <div class="head-section margin-medium">
-                <h3 class="h3-head red">Recent works</h3>
+                <h3 class="h3-head red">Recent projects</h3>
                 <div class="flex-center">
                     <h2 class="h2-head light">We love what we do, check out
                         some of our latest works</h2>
                 </div>
                 <div class="line-hor-light"></div>
             </div>
-            <div class="works-content">
+            <div class="projects-content">
+                <div class="r1-projects">
+                    <div class="box box-1 container-project">
+                        <a href="https://gore-tex.netlify.app/" class="no-style project-link" target="_blank">
+                            <div class="text-project">
+                                <h3 class="project-title light">Product Landing Page</h3>
+                                <a href="https://gore-tex.netlify.app/" class="no-style project-link" target="_blank">Chech Up <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </a>
+                        <img src="./images/img_02-terrex.jpg" alt="project product page" class="project-image">
+                    </div>
+                    <div class="box box-2 container-project">
+                        <a href="https://javascript-documentation-page.netlify.app/" class="no-style" target="_blank">
+                            <img src="./images/JavaScript_logo.png" alt="project documentation page" class="project-image">
+                            <div class="text-project">
+                                <h3 class="project-title">Technical Documentation Page</h3>
+                                <a href="https://javascript-documentation-page.netlify.app/" class="no-style project-link" target="_blank">Chech Up <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box box-3 container-project">
+                        <a href="https://codepen.io/yolmaryda/full/bGBmMBq" class="no-style" target="_blank">
+                            <img src="https://hips.hearstapps.com/dm.h-cdn.co/assets/17/35/1024x512/landscape-1503957449-gettyimages-52114590.jpg?resize=1200:*" alt="project image tibute page" class="project-image">
+                            <div class="text-project">
+                                <h3 class="project-title">Tribute Page</h3>
+                                <a href="https://codepen.io/yolmaryda/full/bGBmMBq" class="no-style project-link" target="_blank">Chech Up <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box box-4 container-project">
+                        <a href="https://codepen.io/yolmaryda/full/ExNGjYM" class="no-style" target="_blank">
+                            <img src="./images/form_page.jpg" alt="project form image" class="project-image">
+                            <div class="text-project">
+                                <h3 class="project-title">Survey Form</h3>
+                                <a href="https://codepen.io/yolmaryda/full/ExNGjYM" class="no-style project-link" target="_blank">Chech Up <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box box-5 container-project">
+                        <a href="https://www.behance.net/gallery/71513557/Interfaz-App-ECOTAXI" class="no-style" target="_blank">
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ae1df471513557.5bc7ab320f456.jpg" alt="image ui interface" class="project-image">
+                            <div class="text-project">
+                                <h3 class="project-title">UI Interface</h3>
+                                <a href="https://www.behance.net/gallery/71513557/Interfaz-App-ECOTAXI" class="no-style project-link" target="_blank">Chech Up <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <section class="clients-main" id="clients">
-            <div class="head-section margin-medium">
-                <h3 class="h3-head red">Our clients</h3>
-                <div class="flex-center">
-                    <h2 class="h2-head dark">KOBRA has been honored to partner up with these clients</h2>
-                </div>
-                <div class="line-hor-dark"></div>
-            </div>
-            <div class="clients-content">
-            </div>
         </section>
 
         <section class="contact-main" id="contact">
@@ -226,7 +260,7 @@
 
                     <div class="c-info">
                         <h5 class="red h5-form">Where to find us</h5>
-                        <p class="gray p-form">
+                        <p class="grey p-form">
                             1600 Amphitheatre Parkway<br>
                             Mountain View, CA<br>
                             94043 US
@@ -235,7 +269,7 @@
 
                     <div class="c-info">
                         <h5 class="red h5-form">Email Us At</h5>
-                        <p class="gray p-form">
+                        <p class="grey p-form">
                             contact@kobra.com<br>
                             info@kobra.com
                         </p>
@@ -243,7 +277,7 @@
 
                     <div class="c-info">
                         <h5 class="red h5-form">Call Us</h5>
-                        <p class="gray p-form">
+                        <p class="grey p-form">
                             Phone: (+01) 234 56789<br>
                             Mobile: (+01) 234 56789
                         </p>
@@ -251,10 +285,10 @@
 
                     <div class="contact-social">
                         <ul class="list-social ">
-                            <li><a href="#"><i class="fab fa-facebook-f light hover"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram light hover"></i></a></li>
-                            <li><a href="#"><i class="fab fa-pinterest-p light hover"></i></a></li>
-                            <li><a href="#"><i class="fab fa-behance light hover"></i></a></li>
+                            <li><a class="hover no-style light" href="https://github.com/yolmaryda" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                            <li><a id="profile-link" class="hover no-style light" href="https://www.freecodecamp.org/yolmaryda" target="_blank"><i class="fab fa-free-code-camp" aria-hidden="true"></i></a></li>
+                            <li><a class="hover no-style light" href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+                            <li><a class="hover no-style light" href="https://www.behance.net/yolmaryda4b4b" target="_blank"><i class="fab fa-behance" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -266,11 +300,11 @@
         <div class="footer-main margin-medium">
             <div class="footer-about">
                 <img src="./images/KOBRA_logo-hor-white.png" alt="logo kobra">
-                <p class="gray text-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rerum ex magnam maxime amet aperiam pariatur explicabo doloribus quo neque nostrum necessitatibus, reiciendis reprehenderit. Provident, molestias. Facilis aliquid nobis laboriosam. Consectetur adipisicing elit. Maiores eaque fuga facere, iste a iure, eligendi minus explicabo doloribus, architecto corporis veniam dolor unde nemo libero voluptates quos deserunt sequi.</p>
+                <p class="grey text-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rerum ex magnam maxime amet aperiam pariatur explicabo doloribus quo neque nostrum necessitatibus, reiciendis reprehenderit. Provident, molestias. Facilis aliquid nobis laboriosam. Consectetur adipisicing elit. Maiores eaque fuga facere, iste a iure, eligendi minus explicabo doloribus, architecto corporis veniam dolor unde nemo libero voluptates quos deserunt sequi.</p>
             </div>
             <div class="footer-subscription">
                 <h4 class="light">Get notified</h4>
-                <p class="gray text-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet explicabo ad, illum ipsum optio rem ducimus maiores animi assumenda fugit cum consectetur a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit Blanditiis aperiam est porro eaque ullam corrupti tempora dolorum.</p>
+                <p class="grey text-footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet explicabo ad, illum ipsum optio rem ducimus maiores animi assumenda fugit cum consectetur a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit Blanditiis aperiam est porro eaque ullam corrupti tempora dolorum.</p>
 
                 <div class="form-subsc ">
                     <form id="mc-email" action="">
